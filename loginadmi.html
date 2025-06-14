@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>🔐 Connexion Administrateur</h2>
+
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Nom d'utilisateur" required><br><br>
+        <input type="password" id="password" placeholder="Mot de passe" required><br><br>
+        <button type="submit">Se connecter</button>
+    </form>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const user = document.getElementById("username").value.trim();
+            const pass = document.getElementById("password").value.trim();
+
+            // Ici tu mets ton vrai identifiant et mot de passe
+            if (user === "Aaronalviss" && pass === "12345678") {
+                sessionStorage.setItem("adminConnecté", "oui");
+                alert("Connexion réussie !");
+                window.location.href = "admn.html";
+            } else {
+                alert("Nom d'utilisateur ou mot de passe incorrect !");
+            }
+        });
+    </script>
+
+</body>
+</html>

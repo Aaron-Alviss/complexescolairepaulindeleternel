@@ -1,0 +1,1728 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style général */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color:blue;
+    padding: 20px;
+  }
+  
+  /* En-tête */
+  header {
+    background-color:#333;
+    color:white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo {
+    display: block;
+    margin: 20 auto 10px;
+    width: 100px;
+    border-radius: 50%;
+  }
+    
+    /* Navigation */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 15PX;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color:blue;
+      background-color: #0055aa;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    
+    nav ul li a:hover {
+      background-color: #003366;
+    }
+    
+    /* Sections générales */
+    section {
+      background-color: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    
+    /* Images dans les sections */
+    section img {
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    
+    /* Titres */
+    h2 {
+      margin-bottom: 15px;
+      color: #660008;
+    }
+    
+    /* Règlement */
+    #reglement-ecole h3 {
+      color: #0055aa;
+      margin-top: 15px;
+    }
+    
+    /* Témoignages */
+    #temoignages blockquote {
+      background-color: #f1f1f1;
+      border-left: 5px solid #0055aa;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+    
+    /* FAQ */
+    .faq-item {
+      background-color: #eef;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-left: 4px solid #003366;
+      border-radius: 5px;
+    }
+    
+    /* Pied de page */
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      background-color: #003366;
+      color: white;
+      border-radius: 8px;
+    }
+    
+  
+    
+    
+    /* En-tête */
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    
+    header .logo {
+      width: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    
+    /* Navigation */
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      padding: 0;
+    }
+    
+    nav ul li {
+      background-color: #0056b3;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    nav ul li:hover {
+      background-color: #003f7f;
+    }
+    
+    /* Sections générales */
+    section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    section h2 {
+      color: #007BFF;
+      margin-bottom: 15px;
+    }
+    
+    /* Listes */
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+    
+    li {
+      margin-bottom: 8px;
+    }
+    
+    /* Pied de page */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ddd;
+      border-radius: 5px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+    
+    /* Images */
+    img {
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    }
+    
+    /* Témoignages */
+    blockquote {
+      font-style: italic;
+      background-color: #f0f8ff;
+      padding: 10px;
+      border-left: 5px solid #007BFF;
+      margin-bottom: 10px;
+    }
+    
+    /* FAQ */
+    .faq-item {
+      margin-bottom: 15px;
+    }
+  
+    /* Réinitialisation de base */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f4f8;
+      padding: 20px;
+      color: #333;
+    }
+    
+    /* Section du formulaire */
+    section#contact {
+      background-color: #ffffff;
+      padding: 30px;
+      max-width: 600px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    section#contact h2 {
+      color: #007BFF;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    
+    section#contact p {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+    
+    /* Champs du formulaire */
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    
+    form textarea {
+      height: 100px;
+      resize: vertical;
+    }
+    
+    /* Bouton */
+    form button {
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    form button:hover {
+      background-color: #0056b3;
+    }
+  
+    /* Réinitialisation de base */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      padding: 20px;
+    }
+    
+    /* Section Galerie */
+    section#galerie {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    section#galerie h2 {
+      text-align: center;
+      color: #007BFF;
+      margin-bottom: 20px;
+    }
+    
+    /* Galerie */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  
+    /* Réinitialisation de base */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafc;
+      color: #333;
+      padding: 30px;
+    }
+    
+    /* Section Inscription */
+    #inscription {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    #inscription h2 {
+      text-align: center;
+      color: #2c7be5;
+      margin-bottom: 20px;
+    }
+    
+    #inscription p {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    
+    /* Formulaire */
+    form label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      margin-top: 15px;
+    }
+    
+    form input,
+    form select,
+    form button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    form input:focus,
+    form select:focus {
+      outline: none;
+      border-color: #2c7be5;
+      box-shadow: 0 0 5px rgba(44, 123, 229, 0.5);
+    }
+    
+    /* Bouton */
+    form button {
+      margin-top: 20px;
+      background-color: #2c7be5;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    form button:hover {
+      background-color: #1a5fc3;
+  
+  }
+  
+  /* Style général de la page */
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: blur(3px);
+    }
+    
+    /* Conteneur principal */
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    /* Bloc de formulaire */
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.97);
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    
+    /* Logo */
+    .logo {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+    
+    /* Titre */
+    h1 {
+      margin-bottom: 25px;
+      font-size: 24px;
+      color: #2c3e50;
+    }
+    
+    /* Champs du formulaire */
+    .input-container {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    
+    .input-container label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #333;
+    }
+    
+    .input-container input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    
+    /* Lien mot de passe oublié */
+    .forgot-password {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    
+    .forgot-password a {
+      font-size: 14px;
+      color: #007BFF;
+      text-decoration: none;
+    }
+    
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Bouton de connexion */
+    .login-btn {
+      width: 100%;
+      background-color: #007BFF;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .login-btn:hover {
+      background-color: #0056b3;
+    }
+    
+    /* Liens du bas */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    
+    nav ul li {
+      display: inline;
+    }
+    
+    nav ul li a {
+      color: #007BFF;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+  
+  
+  
+  /* styles.css */
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    section#messages {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    section#messages h2 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    
+    section#messages p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    
+    ul#messagList {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    ul#messagList li {
+      background-color: #ecf0f1;
+      margin: 10px 0;
+      padding: 10px 15px;
+      border-left: 5px solid #3498db;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    
+    button {
+      display: block;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #2980b9;
+    }
+  
+  /* Basic reset for margin and padding */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+  }
+  
+  #dashboard {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+  }
+  
+  header h1 {
+      color: #2c3e50;
+      font-size: 2em;
+      margin-bottom: 10px;
+  }
+  
+  ul {
+      list-style-type: none;
+      padding-left: 20px;
+  }
+  
+  ul li {
+      margin-bottom: 10px;
+  }
+  
+  ul li strong {
+      font-weight: bold;
+  }
+  
+  footer p {
+      font-size: 1em;
+      color: #7f8c8d;
+      margin-top: 20px;
+      text-align: center;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 600px) {
+      #dashboard {
+          padding: 15px;
+      }
+  
+      header h1 {
+          font-size: 1.5em;
+      }
+  
+      footer p {
+          font-size: 0.9em;
+      }
+  }
+  
+  /* Réinitialisation de base */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+  }
+  
+  header {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  header h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+  }
+  
+  /* Style pour le champ de recherche */
+  input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"]:focus {
+      border-color: #3498db;
+      outline: none;
+  }
+  
+  /* Style pour le tableau */
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+      background-color: #2c3e50;
+      color: #fff;
+      font-weight: bold;
+  }
+  
+  td {
+      background-color: #f9f9f9;
+  }
+  
+  td button.edit-btn {
+      background-color: #3498db;
+      color: #fff;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  td button.edit-btn:hover {
+      background-color: #2980b9;
+  }
+  
+  /* Styles pour l'élément de recherche et tableau responsive */
+  @media (max-width: 768px) {
+      table, th, td {
+          font-size: 0.9em;
+      }
+  
+      input[type="text"] {
+          padding: 8px;
+      }
+  
+      td button.edit-btn {
+          padding: 5px 10px;
+      }
+  }
+  
+  
+  /* Réinitialisation de base */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+  }
+  
+  header {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  header h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+  }
+  
+  /* Style pour le champ de recherche */
+  input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"]:focus {
+      border-color: #3498db;
+      outline: none;
+  }
+  
+  /* Style pour le tableau */
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+      background-color: #2c3e50;
+      color: #fff;
+      font-weight: bold;
+  }
+  
+  td {
+      background-color: #f9f9f9;
+  }
+  
+  td button.edit-btn {
+      background-color: #3498db;
+      color: #fff;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
+  
+  td button.edit-btn:hover {
+      background-color: #2980b9;
+  }
+  
+  /* Styles pour l'élément de recherche et tableau responsive */
+  @media (max-width: 768px) {
+      table, th, td {
+          font-size: 0.9em;
+      }
+  
+      input[type="text"] {
+          padding: 8px;
+      }
+  
+      td button.edit-btn {
+          padding: 5px 10px;
+      }
+  }
+  
+  
+  
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f2f7ff, #dceeff);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    padding-top: 60px;
+  }
+  
+  form {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto; /* centrer uniquement le formulaire sans tout centrer la page */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+    margin-bottom: 20px;
+    resize: vertical;
+  }
+  
+  textarea {
+    height: 120px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #43a047;
+  }
+  
+  
+  
+  
+  
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .topbar {
+    background-color: #8b0000; /* couleur rouge foncé */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+  
+  .left, .center, .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .logo {
+    height: 30px;
+  }
+  
+  .year-selector {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  .notification-icon {
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .profile-pic {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .school-name {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .flag {
+    height: 20px;
+    width: 30px;
+    object-fit: cover;
+  }
+
+
+  * { box-sizing: border-box; 
+  } body 
+  { margin: 0; padding: 0; font-family: 'Poppins', sans-serif; background: #f4f6f9; color: #333; 
+  } strong { color: #2c3e50; } .footer { text-align: center; margin-top: 50px; color: #888; } @media (max-width: 600px) { nav ul { flex-direction: column; align-items: center; } }
+
+
+  /* === Réinitialisation globale de base === */
+  /* === Global Reset === */
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: white;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 50px;
+  font-size: 18px;
+}
+
+/* === Navigation Bar === */
+ul {
+  list-style: none;
+  display:flex;
+  flex-wrap:wrap-reverse;
+  justify-content:center;
+  background:white;
+  padding: 10px 0;
+}
+
+ul li {
+  margin: 5px 10px;
+  padding: 2px;
+}
+
+ul li a {
+  text-decoration:none;
+  color: black;
+  font-weight: bold;
+  padding: 3px 5px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+ul li a:hover {
+  background-color: white;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  padding: 20px;
+  color: #003344;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header img.logo {
+  width: 150px;
+  border-radius: 100%;
+}
+
+/* === Section Titles === */
+h2, h3 {
+  color:black;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+}
+
+/* === Formulaires === */
+form {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  background: wheat;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form label {
+  display:block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+/* === Table === */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table th {
+  background-color: #0077cc;
+  color: white;
+}
+
+/* === Galerie === */
+.gallery img {
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+video {
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  background: #0077cc;
+  color: white;
+  position: relative;
+}
+
+/* === Messages, Alerts, etc. === */
+.success {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+blockquote {
+  border-left: 5px solid #0077cc;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #eef6fb;
+  width: 80%;
+  font-style: italic;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form, table {
+    width: 95%;
+  }
+
+  .gallery img,
+  video {
+    width: 90%;
+   
+  }
+}
+
+
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34495e;
+  color: white;
+  padding: 10px 20px;
+}
+
+.topbar .left,
+.topbar .center,
+.topbar .right {
+  display: flex;
+  align-items: center;
+}
+
+.topbar .logo,
+.topbar .profile-pic,
+.topbar .flag {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #007BFF;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+
+
+.accueil-inscription {
+  background-color: #fefefe;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+
+
+
+
+.histoire-ecole {
+  font-size: 20px;
+  font-style:italic;
+  color:#333;
+}
+
+
+
+
+
+/* Rideau */
+.curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1000;
+  pointer-events: none; /* empêche l'interaction */
+}
+
+.curtain-left, .curtain-right {
+  width: 50%;
+  height: 100%;
+  background-color: dodgerblue;
+  transition: transform 2s ease;
+}
+
+.curtain-left {
+  transform-origin: left;
+}
+
+.curtain-right {
+  transform-origin: right;
+}
+
+.zipper {
+  position: absolute;
+  width: 4px;
+  height: 100px;
+  background: #ccc;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: moveZipper 2s forwards;
+}
+
+/* Animation de fermeture éclair */
+@keyframes moveZipper {
+  0% { top: 50%; }
+  100% { top: -100px; opacity: 0; }
+}
+
+/* Contenu de la page */
+.page-content {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  padding: 50px;
+}
+
+
+.tarif-item {
+  color: black;
+  font-size: 18px;
+  font-style: italic;
+  background: wheat;
+}
+
+
+
+
+
+
+.events {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.event:hover {
+  transform: translateY(-5px);
+}
+
+.event img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 15px;
+}
+
+.event-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.3em;
+  color: #333;
+}
+
+.event-content p {
+  margin: 0;
+  color: #666;
+}
+
+.mv {
+  font-size: 17px;
+  font-style: italic;
+  font-style: oblique;
+  color: #34495e; 
+} 
+
+
+#messageList{
+  color:#333;
+  padding: 35px;
+  margin: 25px;
+  font-size: 20px;
+  font-style: normal;
+}
+
+#listeMessages{
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  display: block;
+  text-align: center;
+
+
+}
+#listeInscriptions{
+  color:#333;
+  font-size: 18px;
+  font-style: normal;
+  display: block;
+  text-align: center;
+ position:relative;
+}
+/* === Barre de navigation === */
+ul {
+  list-style: none;                   /* Supprime les puces des listes */
+  display: flex;                      /* Affiche les éléments en ligne (horizontalement) */
+  flex-wrap: wrap-reverse;           /* Permet de passer à la ligne si besoin, dans l'ordre inverse */
+  justify-content: center;           /* Centre les éléments horizontalement */
+  background: white;                 /* Fond blanc pour la barre */
+  padding: 10px 0;                   /* Espace en haut et en bas de la barre */
+}
+
+ul li {
+  margin: 5px 10px;                  /* Espacement entre les éléments de la liste */
+  padding: 2px;                      /* Petit espace intérieur pour chaque lien */
+}
+
+ul li a {
+  text-decoration: none;             /* Supprime le soulignement des liens */
+  color: black;                      /* Couleur noire pour le texte des liens */
+  font-weight: bold;                 /* Texte en gras */
+  padding: 3px 5px;                  /* Espace intérieur autour du texte */
+  border-radius: 3px;                /* Coins légèrement arrondis */
+  transition: background-color 0.3s; /* Animation fluide quand la couleur change au survol */
+}
+
+ul li a:hover {
+  background-color: white;          /* Garde le fond blanc au survol (peut être personnalisé) */
+}
+
+/* === En-tête (Header) === */
+header {
+  text-align: center;               /* Centre tout le contenu de l’en-tête */
+  padding: 20px;                    /* Ajoute de l’espace intérieur */
+  color: #003344;                   /* Couleur bleue foncée pour le texte */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Ombre portée en bas pour créer un effet flottant */
+}
+
+header img.logo {
+  width: 150px;                     /* Largeur fixe du logo */
+  border-radius: 100%;              /* Rend le logo complètement rond */
+}
+
+/* === Titres des sections === */
+h2, h3 {
+  color: black;                     /* Couleur noire pour les titres */
+  margin-top: 30px;                 /* Espace au-dessus du titre */
+  text-align: center;               /* Centre le titre */
+  font-size: 25px;                  /* Taille du texte du titre */
+  font-style: italic;               /* Italique pour donner un style élégant */
+}
+
+/* === Formulaires === */
+form {
+  background: wheat;                /* Fond beige clair */
+  padding: 20px;                    /* Espace intérieur du formulaire */
+  border-radius: 8px;               /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Ombre douce autour du formulaire */
+  max-width: 500px;                 /* Largeur maximale du formulaire */
+  margin: auto;                     /* Centre le formulaire horizontalement */
+}
+
+input, select, textarea {
+  width: 100%;                      /* Champs qui prennent toute la largeur disponible */
+  padding: 10px;                    /* Espace intérieur */
+  margin: 10px 0;                   /* Espace entre chaque champ */
+  border-radius: 4px;               /* Coins arrondis */
+  border: 1px solid #ccc;           /* Bordure grise claire */
+}
+
+button {
+  background: #0077cc;              /* Couleur de fond bleue */
+  color: white;                     /* Texte blanc */
+  border: none;                     /* Supprime la bordure */
+  padding: 10px 20px;               /* Espace intérieur */
+  border-radius: 4px;               /* Coins arrondis */
+  cursor: pointer;                  /* Curseur en forme de main */
+  transition: background 0.3s;      /* Animation fluide pour la couleur de fond */
+}
+
+button:hover {
+  background: #005fa3;              /* Fond plus foncé au survol */
+}
+
+/* === Tableaux === */
+table {
+  width: 100%;                      /* Le tableau prend toute la largeur */
+  border-collapse: collapse;        /* Fusionne les bordures entre les cellules */
+  margin-top: 20px;                 /* Espace au-dessus du tableau */
+}
+
+th, td {
+  padding: 12px;                    /* Espace intérieur des cellules */
+  text-align: center;               /* Texte centré dans les cellules */
+  border: 1px solid #ccc;           /* Bordure grise */
+}
+
+th {
+  background: #0077cc;              /* Fond bleu pour les entêtes */
+  color: white;                     /* Texte blanc */
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;              /* Une ligne sur deux a un fond gris clair */
+}
+
+/* === Galerie d'images === */
+.gallery img {
+  margin: 10px;                     /* Espace entre les images */
+  border-radius: 8px;               /* Coins arrondis */
+  border: 1px solid #ddd;           /* Bordure gris clair */
+  transition: transform 0.3s;       /* Animation au survol (zoom) */
+}
+
+.gallery img:hover {
+  transform: scale(1.05);           /* Agrandit légèrement l’image au survol */
+}
+
+/* === Vidéos === */
+video {
+  display: block;                   /* Affiche la vidéo en bloc (sa propre ligne) */
+  margin: 20px auto;                /* Centre la vidéo */
+  max-width: 90%;                   /* Ne dépasse pas 90% de la largeur */
+  border-radius: 8px;               /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Ombre autour de la vidéo */
+}
+
+/* === Pied de page === */
+footer {
+  text-align: center;               /* Texte centré */
+  margin-top: 40px;                 /* Espace au-dessus du footer */
+  padding: 15px;                    /* Espace intérieur */
+  background: #0077cc;              /* Fond bleu */
+  color: white;                     /* Texte blanc */
+  position: relative;               /* Pour positionner des éléments à l’intérieur si besoin */
+}
+
+/* === Messages de succès ou d'erreur === */
+.success {
+  color: green;                     /* Texte vert pour les messages positifs */
+}
+
+.error {
+  color: red;                       /* Texte rouge pour les messages d'erreur */
+}
+
+/* === Citations (ex : témoignages) === */
+blockquote {
+  background: #f9f9f9;              /* Fond très clair */
+  padding: 20px;                    /* Espace intérieur */
+  border-left: 5px solid #ccc;      /* Barre verticale à gauche */
+  margin: 20px 0;                   /* Espace autour */
+  font-style: italic;               /* Texte en italique */
+}
+
+/* === Responsive design pour petits écrans === */
+@media (max-width: 600px) {
+  ul {
+    flex-direction: column;         /* Les éléments de menu sont empilés verticalement */
+    align-items: center;            /* Centrés */
+  }
+
+  form, .gallery img, video {
+    width: 95%;                     /* Largeur presque complète pour mieux s’afficher sur petit écran */
+    margin: auto;                   /* Centré */
+  }
+}
+
+/* === Barre supérieure (logo, profil, drapeau) === */
+.topbar {
+  display: flex;                    /* Affiche les éléments en ligne */
+  align-items: center;             /* Centre les éléments verticalement */
+  justify-content: space-between;  /* Espace entre les éléments */
+  background: #003344;             /* Fond bleu foncé */
+  color: white;                    /* Texte blanc */
+  padding: 10px 20px;              /* Espace intérieur */
+}
+
+.topbar img {
+  height: 40px;                     /* Hauteur des images dans la topbar */
+  border-radius: 50%;              /* Rend les images rondes */
+}
+
+/* === Style général des liens === */
+a {
+  text-decoration: none;           /* Supprime le soulignement */
+  color: white;                    /* Couleur du texte */
+  background-color: #0077cc;       /* Fond bleu */
+  padding: 5px 10px;               /* Espace autour du texte */
+  border-radius: 4px;              /* Coins arrondis */
+  transition: background-color 0.3s; /* Animation fluide au survol */
+}
+
+a:hover {
+  background-color: #005fa3;       /* Fond plus foncé au survol */
+}
+
+/* === Autres blocs spécifiques === */
+.accueil-inscription {
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.histoire-ecole {
+  padding: 40px;
+  background-color: #e6f7ff;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* === Rideau animé d’intro === */
+.curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  background: white;
+  overflow: hidden;
+}
+
+.curtain .half {
+  width: 50%;
+  height: 100%;
+  background: #0077cc;
+  transition: transform 2s ease;
+}
+
+.curtain.open .half.left {
+  transform: translateX(-100%);
+}
+
+.curtain.open .half.right {
+  transform: translateX(100%);
+}
+
+.zipper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1010;
+}
+
+/* === Éléments tarifaires === */
+.tarif-item {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  flex: 1;
+}
+
+/* === Événements === */
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.event {
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin: 15px;
+  overflow: hidden;
+}
+
+.event img {
+  width: 100%;
+  height: auto;
+}
+
+.event-content {
+  padding: 15px;
+}
+
+/* === Listes de messages et d’inscriptions === */
+#messageList, #listeMessages, #listeInscriptions {
+  width: 90%;
+  margin: 30px auto;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}

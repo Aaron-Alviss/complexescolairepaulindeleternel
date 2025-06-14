@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messagerie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+</div>
+<style>
+    /* Style du menu responsive */
+    .menu-toggle {
+      display: none;
+      background-color: white;
+      color: yellow;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      margin: 10px;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      background-color: blue;
+      padding: 10px;
+    }
+
+    .main-nav a {
+      color: yellowgreen;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .main-nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main-nav.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bouton menu mobile -->
+  <button style="color: black;" class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+  <!-- Menu principal -->
+  <nav class="main-nav">
+   <a href="admn.html">Admnistracteur</a> 
+      <li><a href="dashboard.html">Tableau de bord</a></li>
+      <li><a href="contact.html">Formulaire de Contact</a></li>
+      <li><a href="messages.html">Messagerie</a></li>
+      <li><a href="Listes.html">Rapport de fin d'année</a></li>
+      <li><a href="personnels-ecole.html">Listes de personnels</a></li>
+      <li><a href="event.html">Événements</a></li>
+      <li><a href="gallerie.html">Galerie</a></li>
+      <li><a href="inscription.html">Inscription en ligne</a></li>
+      <li><a href="reception.html">Mes messages</a></li>
+      <li><a href="index.html">Acueil</a></li>
+      <li><a href="exam.html">text d'entré</a></li>
+      <li><a href="mes.cours.html">mes pdf</a></li>
+     <li><a href="paie.html">Tarifs</a></li>
+     <li><a href="login.html">Connexion</a></li>
+  <li><a href="Creer-un-compte.html">Creer un compte</a></li>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.main-nav');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+    <!-- Messagerie -->
+    <section id="messages">
+        <h2>Messagerie</h2>
+        <p>Envoyez et consultez vos messages ici.</p>
+        <script src="main.js"></script>
+    <script src="messages.js"></script>
+    <script>
+      function toggleMenu() {
+        const navlinks = document.getElementById("navLinks");
+        navlinks.classList.toggle('show');
+      }
+    </script>
+</body>
+</html>

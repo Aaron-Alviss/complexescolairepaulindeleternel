@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Espace Administration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Bouton pour voir les réponses aux examens -->
+<a href="voir-reponses.php" style="display:inline-block; padding:10px 15px; background-color:#4CAF50; color:white; text-decoration:none; border-radius:5px;">
+    📋 Voir les réponses aux examens
+  </a>
+  
+
+    <h2>👨‍🏫 Espace Administrateur</h2>
+
+    <button onclick="deconnexion()">🔒 Déconnexion</button>
+
+    <section>
+        <h3>Liste des élèves inscrits</h3>
+        <ul id="listeEleves"></ul>
+    </section>
+    <form id="messageForm">
+        <textarea id="nouveauMessage" placeholder="Votre message ici..."></textarea><br>
+        <button type="submit">Publier</button>
+    </form>
+    
+    <script>
+    document.getElementById("messageForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const message = document.getElementById("nouveauMessage").value.trim();
+        if (message) {
+            let messages = JSON.parse(localStorage.getItem("messages")) || [];
+            messages.push(message);
+            localStorage.setItem("messages", JSON.stringify(messages));
+            alert("Message publié !");
+            document.getElementById("nouveauMessage").value = "";
+        }
+    });
+    </script>
+
+<button onclick="localStorage.removeItem('messages'); alert('Tous les messages ont été supprimés.'); location.reload();">
+    🧹 Vider les messages
+</button>
+
+    
+
+    <section>
+        <h3>📢 Messages publiés</h3>
+        <ul id="listeMessages"></ul>
+    </section>
+
+    <script>
+        // 🔐 Protection d'accès
+        if (sessionStorage.getItem("adminConnecté") !== "oui") {
+            alert("Accès refusé. Veuillez vous connecter.");
+            window.location.href = "loginadmi.html";
+        }
+
+        // 📋 Affichage des élèves
+        const inscriptions = JSON.parse(localStorage.getItem("inscriptions")) || [];
+        const liste = document.getElementById("listeEleves");
+        inscriptions.forEach(eleve => {
+            const li = document.createElement("li");
+            li.textContent = `${eleve.nom} - ${eleve.dateNaissance} - ${eleve.niveau}`;
+            liste.appendChild(li);
+        });
+
+        // 💬 Enregistrement de nouveaux messages
+        document.getElementById("messageForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const message = document.getElementById("nouveauMessage").value.trim();
+            if (message) {
+                let messages = JSON.parse(localStorage.getItem("messages")) || [];
+                messages.push(message);
+                localStorage.setItem("messages", JSON.stringify(messages));
+                alert("Message publié !");
+                document.getElementById("nouveauMessage").value = "";
+                afficherMessages(); // Met à jour la liste affichée
+            }
+        });
+
+        // 📢 Afficher tous les messages déjà publiés
+        function afficherMessages() {
+            const listeMessages = document.getElementById("listeMessages");
+            listeMessages.innerHTML = ""; // Vider avant de recharger
+            const messages = JSON.parse(localStorage.getItem("messages")) || [];
+            messages.forEach(msg => {
+                const li = document.createElement("li");
+                li.textContent = msg;
+                listeMessages.appendChild(li);
+            });
+        }
+
+        afficherMessages(); // au chargement
+
+        // 🔓 Fonction de déconnexion
+        function deconnexion() {
+            sessionStorage.removeItem("adminConnecté");
+            alert("Déconnecté !");
+            window.location.href = "loginadmi.html";
+        }
+    </script>
+
+</body>
+</html>

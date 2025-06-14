@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen en ligne</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .question { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+<h1>Examen d'admission</h1>
+
+<form method="POST" action="enregistrer-reponses.php">
+    <label for="nom">Nom de l'élève :</label><br>
+    <input type="text" name="nom" id="nom" required><br><br>
+
+    <label>Choisissez votre cours :</label><br>
+    <select name="cours" id="cours" required onchange="afficherQuestions()">
+        <option value="">-- Choisir --</option>
+        <option value="Math">Math</option>
+        <option value="Francais">Français</option>
+        <option value="Latin">Latin</option>
+    </select><br><br>
+
+    <div id="questions"></div>
+
+    <button type="submit">Soumettre l'examen</button>
+</form>
+
+<script>
+function afficherQuestions() {
+    const questionsDiv = document.getElementById('questions');
+    const cours = document.getElementById('cours').value;
+    let html = '';
+
+    if (cours === 'Math') {
+        html = `
+            <div class="question">
+                <label>1. Combien font 5 + 3 ?</label><br>
+                <input type="text" name="q1" required>
+            </div>
+            <div class="question">
+                <label>2. Combien font 12 / 4 ?</label><br>
+                <input type="text" name="q2" required>
+            </div>
+        `;
+    } else if (cours === 'Francais') {
+        html = `
+            <div class="question">
+                <label>1. Quel est le synonyme de "rapide" ?</label><br>
+                <input type="text" name="q1" required>
+            </div>
+            <div class="question">
+                <label>2. Complétez : Il ______ au marché.</label><br>
+                <input type="text" name="q2" required>
+            </div>
+        `;
+    } else if (cours === 'Latin') {
+        html = `
+            <div class="question">
+                <label>1. Traduisez "pater" en français :</label><br>
+                <input type="text" name="q1" required>
+            </div>
+            <div class="question">
+                <label>2. Quelle est la déclinaison de "rosa" ?</label><br>
+                <input type="text" name="q2" required>
+            </div>
+        `;
+    }
+
+    questionsDiv.innerHTML = html;
+}
+</script>
+
+</body>
+</html>

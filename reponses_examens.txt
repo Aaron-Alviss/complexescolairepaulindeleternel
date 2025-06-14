@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réponses des examens</title>
+    <style>
+        body { font-family: Arial; padding: 20px; background-color: #f2f2f2; }
+        .reponse {
+            background-color: white;
+            border-left: 4px solid #4CAF50;
+            padding: 10px;
+            margin-bottom: 10px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+<h1>📄 Réponses soumises par les élèves</h1>
+
+<?php
+$fichier = 'reponses_examens.txt';
+
+if (file_exists($fichier)) {
+    $contenu = file_get_contents($fichier);
+    $reponses = explode('---', $contenu);
+    
+    foreach ($reponses as $bloc) {
+        $bloc = trim($bloc);
+        if (!empty($bloc)) {
+            echo "<div class='reponse'>$bloc</div>";
+        }
+    }
+} else {
+    echo "<p>Aucune réponse enregistrée pour le moment.</p>";
+}
+?>
+
+<a href="admin.html">⬅ Retour à l'administration</a>
+
+</body>
+</html>

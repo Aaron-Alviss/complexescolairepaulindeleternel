@@ -1,0 +1,397 @@
+/* === Global Reset === */
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background:white;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 50px;
+  font-size: 18px;
+}
+
+/* === Navigation Bar === */
+ul {
+  list-style: none;
+  display:flex;
+  flex-wrap:wrap-reverse;
+  justify-content:center;
+  padding: 10px 0;
+}
+
+ul li {
+  margin: 5px 10px;
+  padding: 2px;
+}
+
+ul li a {
+  text-decoration:none;
+  color: black;
+  font-weight: bold;
+  padding: 3px 5px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+ul li a:hover {
+  background-color: white;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  padding: 20px;
+  color: #003344;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header img.logo {
+  width: 150px;
+  border-radius: 100%;
+}
+
+/* === Section Titles === */
+h2, h3 {
+  color:black;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+}
+
+/* === Formulaires === */
+form {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  border: 3px solid white;
+  box-shadow: 0 1px 1px darkorange, 4px 4px 10px darkorange;
+}
+
+form label {
+  display:block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+/* === Table === */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table th {
+  background-color: #0077cc;
+  color: white;
+}
+
+/* === Galerie === */
+.gallery img {
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid #eee;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+video {
+  margin: 10px none;
+  display:block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  background: #0077cc;
+  color: white;
+  position: relative;
+}
+
+/* === Messages, Alerts, etc. === */
+.success {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+blockquote {
+  border-left: 5px solid #0077cc;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #eef6fb;
+  width: 80%;
+  font-style: italic;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form, table {
+    width: 95%;
+  }
+
+  .gallery img,
+  video {
+    width: 90%;
+   
+  }
+}
+
+
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34495e;
+  color: white;
+  padding: 10px 20px;
+}
+
+.topbar .left,
+.topbar .center,
+.topbar .right {
+  display: flex;
+  align-items: center;
+}
+
+.topbar .logo,
+.topbar .profile-pic,
+.topbar .flag {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: black;
+}
+
+
+
+.accueil-inscription {
+  background-color: #fefefe;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+
+
+
+
+.histoire-ecole {
+  font-size: 20px;
+  font-style:italic;
+  color:#333;
+}
+
+
+
+
+
+/* Rideau */
+.curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1000;
+  pointer-events: none; /* empêche l'interaction */
+}
+
+.curtain-left, .curtain-right {
+  width: 50%;
+  height: 100%;
+  background-color: dodgerblue;
+  transition: transform 2s ease;
+}
+
+.curtain-left {
+  transform-origin: left;
+}
+
+.curtain-right {
+  transform-origin: right;
+}
+
+.zipper {
+  position: absolute;
+  width: 4px;
+  height: 100px;
+  background: #ccc;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: moveZipper 2s forwards;
+}
+
+/* Animation de fermeture éclair */
+@keyframes moveZipper {
+  0% { top: 50%; }
+  100% { top: -100px; opacity: 0; }
+}
+
+/* Contenu de la page */
+.page-content {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  padding: 50px;
+}
+
+
+.tarif-item {
+  color: black;
+  font-size: 18px;
+  font-style: italic;
+  background: wheat;
+}
+
+
+
+
+
+
+.events {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.event {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.event:hover {
+  transform: translateY(-5px);
+}
+
+.event img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 15px;
+}
+
+.event-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.3em;
+  color: #333;
+}
+
+.event-content p {
+  margin: 0;
+  color: #666;
+}
+
+.mv {
+  font-size: 17px;
+  font-style: italic;
+  font-style: oblique;
+  color: #34495e; 
+} 
+
+
+#messageList{
+  color:#333;
+  padding: 35px;
+  margin: 25px;
+  font-size: 20px;
+  font-style: normal;
+}
+
+#listeMessages{
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  display: block;
+  text-align: center;
+
+
+}
+#listeInscriptions{
+  color:#333;
+  font-size: 18px;
+  font-style: normal;
+  display: block;
+  text-align: center;
+ position:relative;
+}

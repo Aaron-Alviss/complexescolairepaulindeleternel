@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: black;">
+
+  <div class="form-container">
+    <h2>Connexion</h2>
+    <form id="loginForm">
+      <label for="identifier">Nom d'utilisateur ou e-mail :</label>
+      <input type="text" id="identifier" name="identifier" required>
+      <label for="login_password">Mot de passe :</label>
+      <input type="password" id="login_password" name="login_password" required>
+      <button type="submit" class="btn"> Se connecter</button>
+      <div class="error" id="loginError"></div>
+      <div class="create-account">
+      <label for="count">Vous n'avez pas un compte</label>
+      <a href="Creer-un-compte.html">Créer un compte</a>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

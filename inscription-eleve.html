@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription Élève</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>Formulaire d'inscription des élèves</h2>
+
+  <form action="enregistrer-eleve.php" method="POST">
+    <label for="nom">Nom de l'élève :</label><br>
+    <input type="text" id="nom" name="nom" required><br><br>
+
+    <label for="prenom">Prénom :</label><br>
+    <input type="text" id="prenom" name="prenom" required><br><br>
+
+    <label for="classe">Classe :</label><br>
+    <input type="text" id="classe" name="classe" required><br><br>
+
+    <label for="parent">Nom du parent :</label><br>
+    <input type="text" id="parent" name="parent" required><br><br>
+
+    <label for="telephone">Téléphone du parent :</label><br>
+    <input type="text" id="telephone" name="telephone" required><br><br>
+
+    <button type="submit">Envoyer l'inscription</button>
+  </form>
+
+</body>
+</html>

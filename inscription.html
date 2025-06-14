@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header style="background-color: blue; color: white;padding: 20px; text-align: center;" >
+    <h1>Inscription en ligne</h1>
+    <nav>
+      <ul>
+        <li><a href="admn.html">Admnistracteur</a></li>
+        <li><a href="dashboard.html">Tableau de bord</a></li>
+        <li><a href="contact.html">Formulaire de Contact</a></li>
+        <li><a href="messages.html">Messagerie</a></li>
+        <li><a href="Listes.html">Rapport de fin d'année</a></li>
+        <li><a href="personnels-ecole.html">Listes de personnels</a></li>
+        <li><a href="event.html">Événements</a></li>
+        <li><a href="gallerie.html">Galerie</a></li>
+        <li><a href="inscription.html">Inscription en ligne</a></li>
+        <li><a href="reception.html">Mes messages</a></li>
+        <li><a href="index.html">Acueil</a></li>
+        <li><a href="exam.html">text d'entré</a></li>
+        <li><a href="mes.cours.html">mes pdf</a></li>
+       <li><a href="paie.html">Tarifs</a></li>
+       <li><a href="login.html">Connexion</a></li>
+      <li><a href="Creer-un-compte.html">Creer un compte</a></li>
+      </ul>
+    </nav>
+  </header>
+<p>Inscrivez vos enfants</p>
+<p>
+  📱 Pour toute complication  d'inscription, appelez-nous au :
+  <a href="tel:+243838619545">+243 838619545</a>
+</p>
+
+
+<section id="inscription">
+    <h2>Inscription</h2>
+    <p>Remplissez le formulaire ci-dessous pour inscrire votre enfant à notre école :</p>
+    
+    <form id="formInscription">
+        <label for="nom">Nom de l'élève :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="date_naissance">Date de naissance :</label><br>
+        <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+
+        <label for="niveau">Niveau d'enseignement :</label><br>
+        <select id="niveau" name="niveau" required>
+            <option value="">--Choisissez un niveau--</option>
+            <option value="maternelle">Maternelle</option>
+            <option value="primaire">Primaire</option>
+            <option value="secondaire">Secondaire</option>
+            <option value="1er">1er</option>
+        </select><br><br>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+</section>
+
+
+<footer> 
+  <p>Telephone : <a href="tel:+243838619545" style="color: red;">+243838619545
+  </a></p>
+  &copy;2025 CSPE Tous droits reservés merci de pouvoir nous contacter via notre numero </footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
